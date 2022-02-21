@@ -118,7 +118,7 @@ class AsyncPath(PurePosixPath):
     async def symlink_to(self, *args: P.args, **kwargs: P.kwargs) -> None:
         return await to_thread(self.sync_path.symlink_to, *args, **kwargs)
 
-    async def shardlink_to(self, *args: P.args, **kwargs: P.kwargs) -> None:
+    async def hardlink_to(self, *args: P.args, **kwargs: P.kwargs) -> None:
         return await to_thread(self.sync_path.hardlink_to, *args, **kwargs)
 
     async def touch(self, *args: P.args, **kwargs: P.kwargs) -> None:
