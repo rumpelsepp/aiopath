@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "aiopath"
+version = "0.1.0"
+description = "Wrapper for pathlib.Path providing async methods"
+authors = ["Stefan Tatschner <stefan@rumpelsepp.org>"]
+license = "GPLv3"
+
+[tool.poetry.dependencies]
+python = ">=3.6.2,<4.0"
+aiofiles = "^0.8.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+mypy = "^0.931"
+black = "^22.1.0"
+python-lsp-black = "^1.1.0"
+python-lsp-server = "^1.3.3"
+pylsp-mypy = "^0.5.7"
+pylsp-rope = "^0.1.8"
+isort = "^5.10.1"
+types-aiofiles = "^0.8.3"
+
+[tool.mypy]
+strict = true
+
+[tool.black]
+target-version = ['py310']
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
