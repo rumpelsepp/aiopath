@@ -10,7 +10,7 @@ authors = ["Stefan Tatschner <stefan@rumpelsepp.org>"]
 license = "GPLv3"
 
 [tool.poetry.dependencies]
-python = ">=3.10,<4.0"
+python = ">=3.9,<4.0"
 aiofiles = "^0.8.0"
 
 [tool.poetry.dev-dependencies]
@@ -22,13 +22,13 @@ python-lsp-server = "^1.4.1"
 pylsp-mypy = "^0.5.7"
 pylsp-rope = "^0.1.8"
 isort = "^5.10.1"
-types-aiofiles = "^0.8.3"
+types-aiofiles = "^0.8.8"
 
 [tool.mypy]
 strict = true
 
 [tool.black]
-target-version = ['py310']
+target-version = ['py39']
 
 [tool.isort]
 profile = "black"

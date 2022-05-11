@@ -80,11 +80,11 @@ class AsyncPath(PurePosixPath):
     async def mkdir(self, *args: P.args, **kwargs: P.kwargs) -> None:
         return await to_thread(self.sync_path.mkdir, *args, **kwargs)
 
-    # XXX: Implement this without aiofiles.
     def open(
-        *args: P.args, **kwargs: P.kwargs
+        *args: P.args,
+        **kwargs: P.kwargs,
     ) -> AiofilesContextManager[None, None, Any]:
-        return aiofiles.open(*args, **kwargs)  # type: ignore
+        return aiofiles.open(*args, **kwargs)
 
     async def owner(self, *args: P.args, **kwargs: P.kwargs) -> str:
         return await to_thread(self.sync_path.owner, *args, **kwargs)
