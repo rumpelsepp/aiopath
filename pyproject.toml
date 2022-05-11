@@ -22,7 +22,7 @@ python-lsp-server = "^1.4.1"
 pylsp-mypy = "^0.5.7"
 pylsp-rope = "^0.1.8"
 isort = "^5.10.1"
-types-aiofiles = "^0.8.3"
+types-aiofiles = "^0.8.8"
 
 [tool.mypy]
 strict = true
