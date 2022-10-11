@@ -11,11 +11,11 @@ license = "GPLv3"
 
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
-aiofiles = "^0.8.0"
+aiofiles = "^22.1.0"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
-mypy = "^0.961"
+mypy = "^0.982"
 black = "^22.3.0"
 python-lsp-black = "^1.1.0"
 python-lsp-server = "^1.4.1"
