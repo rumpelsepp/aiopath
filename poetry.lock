@@ -185,11 +185,11 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "pylsp-mypy"
-version = "0.5.8"
+version = "0.6.3"
 description = "Mypy linter for the Python LSP Server"
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
 mypy = "*"
@@ -340,7 +340,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<4.0"
-content-hash = "d9e2161d9ebfb530e4770b80bf3fb06fce25759634380075d21d60f235add079"
+content-hash = "573d8e9f3cf0efb03cd5ef5bcac78162acc8e89a073b1cb04271e427080c51cd"
 
 [metadata.files]
 aiofiles = [
@@ -451,8 +451,8 @@ pyflakes = [
     {file = "pyflakes-2.4.0.tar.gz", hash = "sha256:05a85c2872edf37a4ed30b0cce2f6093e1d0581f8c19d7393122da7e25b2b24c"},
 ]
 pylsp-mypy = [
-    {file = "pylsp-mypy-0.5.8.tar.gz", hash = "sha256:79f4ce6eb69d767801cb47f3d12f2be2c9cf65c21acfc5868a81c094d8087eb5"},
-    {file = "pylsp_mypy-0.5.8-py3-none-any.whl", hash = "sha256:d98d1360cbba191192cf4c61d0f9ad77b62b87b4660263f1dcdf2252237e30dd"},
+    {file = "pylsp-mypy-0.6.3.tar.gz", hash = "sha256:06a6fd68c3e829d2c9f633bd96c15b6671a7e411139110ae9747d9245b31c8bd"},
+    {file = "pylsp_mypy-0.6.3-py3-none-any.whl", hash = "sha256:3d623ca05f13cf80c8b9fe61f6ac064855bcbef2d1c9b5cf1c9d40ba6158002e"},
 ]
 pylsp-rope = [
     {file = "pylsp-rope-0.1.9.tar.gz", hash = "sha256:67ae55aeea2d60e2d77c5713445fa780e78b7ce543d76e88cfc5a958168b4664"},
